@@ -1,0 +1,560 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Practo for Animals | Find Trusted Animal Care</title>
+
+    <meta name="description" content="Discover veterinary clinics, animal hospitals, boarding, diagnostics and animal welfare services near you.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="#" class="logo">
+                <span class="logo-icon">🐾</span>
+                <span>Practo<span class="logo-highlight"> for Animals</span></span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#services">Explore Services</a>
+                <a href="#providers">Find Providers</a>
+                <a href="#about">About Us</a>
+            </nav>
+
+            <div class="nav-actions">
+
+                <button type="button" class="list-business-btn" id="navListBusinessBtn">
+                    List Your Business
+                </button>
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    type="button"
+                >
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <span class="hero-tag">
+                        ❤️ Better care for every animal
+                    </span>
+
+                    <h1>
+                        Find the right care
+                        for your <span>best friend.</span>
+                    </h1>
+
+                    <p>
+                        Discover veterinary clinics, hospitals and
+                        animal-care services near you.
+                    </p>
+
+
+                    <!-- SEARCH BOX -->
+                    <form class="search-box" id="searchForm">
+
+                        <div class="search-field">
+
+                            <label for="location">Your location</label>
+
+                            <select id="location">
+    <option value="">All Locations</option>
+    <option value="Mysuru">Mysuru</option>
+    <option value="Bengaluru">Bengaluru</option>
+    <option value="Mangaluru">Mangaluru</option>
+    <option value="Udupi">Udupi</option>
+</select>
+
+                        </div>
+
+
+                        <div class="search-divider"></div>
+
+
+                        <div class="search-field">
+
+                            <label for="serviceSearch">Looking for</label>
+
+                            <select id="serviceSearch">
+
+                                <option value="">Select a service</option>
+
+                                <option value="Veterinary Clinic">
+                                    Veterinary Clinic
+                                </option>
+
+                                <option value="Animal Hospital">
+                                    Animal Hospital
+                                </option>
+
+                                <option value="Pet Boarding">
+                                    Pet Boarding
+                                </option>
+
+                                <option value="Diagnostics">
+                                    Diagnostics
+                                </option>
+
+                                <option value="Animal Ambulance">
+                                    Animal Ambulance
+                                </option>
+
+                                <option value="NGO">
+                                    Animal NGOs
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <button type="submit" class="search-btn">
+                            🔍 Find Care
+                        </button>
+
+                    </form>
+
+
+                    <div class="hero-note">
+                        <span>✓</span>
+                        Explore animal-care services in one place
+                    </div>
+
+                </div>
+
+
+                <!-- HERO IMAGE -->
+                <div class="hero-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=900"
+                        alt="Happy dog receiving care"
+                    >
+
+                    <div class="image-card">
+
+                        <span>🐶</span>
+
+                        <div>
+                            <strong>Every animal matters</strong>
+                            <p>Care starts with discovery.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SERVICES SECTION -->
+        <section class="services section" id="services">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-tag">
+                        EXPLORE SERVICES
+                    </span>
+
+                    <h2>Everything your animal needs</h2>
+
+                    <p>
+                        Find the right service for every stage of their care.
+                    </p>
+
+                </div>
+
+
+                <div class="service-grid">
+
+                    <a
+                        href="#providers"
+                        class="service-card"
+                        data-service="Veterinary Clinic"
+                    >
+                        <div class="service-icon">🩺</div>
+                        <h3>Veterinary Clinics</h3>
+                        <p>Find experienced veterinary doctors.</p>
+                    </a>
+
+
+                    <a
+                        href="#providers"
+                        class="service-card"
+                        data-service="Animal Hospital"
+                    >
+                        <div class="service-icon">🏥</div>
+                        <h3>Animal Hospitals</h3>
+                        <p>Discover hospitals for advanced care.</p>
+                    </a>
+
+
+                    <a
+                        href="#providers"
+                        class="service-card"
+                        data-service="Pet Boarding"
+                    >
+                        <div class="service-icon">🏡</div>
+                        <h3>Pet Boarding</h3>
+                        <p>Find safe places for your pets to stay.</p>
+                    </a>
+
+
+                    <a
+                        href="#providers"
+                        class="service-card"
+                        data-service="Diagnostics"
+                    >
+                        <div class="service-icon">🔬</div>
+                        <h3>Diagnostics</h3>
+                        <p>Locate animal testing and diagnostic centres.</p>
+                    </a>
+
+
+                    <a
+                        href="#providers"
+                        class="service-card"
+                        data-service="Animal Ambulance"
+                    >
+                        <div class="service-icon">🚑</div>
+                        <h3>Animal Ambulance</h3>
+                        <p>Discover emergency transport services.</p>
+                    </a>
+
+
+                    <a
+                        href="#providers"
+                        class="service-card"
+                        data-service="NGO"
+                    >
+                        <div class="service-icon">🐾</div>
+                        <h3>Animal NGOs</h3>
+                        <p>Connect with animal welfare organisations.</p>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROVIDERS SECTION -->
+        <section class="providers section" id="providers">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-tag">
+                        DISCOVER CARE
+                    </span>
+
+                    <h2>Explore animal-care providers</h2>
+
+                    <p>
+                        Discover services that help keep animals healthy and safe.
+                    </p>
+
+                </div>
+
+
+                <!-- PROVIDER TOOLBAR -->
+                <div class="provider-toolbar">
+
+                    <div>
+                        <h3>Available providers</h3>
+                        <p id="resultCount">Showing all providers</p>
+                    </div>
+
+
+                    <select id="sortFilter" aria-label="Sort providers">
+
+                        <option value="default">
+                            Sort by: Recommended
+                        </option>
+
+                        <option value="rating">
+                            Highest rated
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- FILTERS -->
+                <div class="filter-bar">
+
+                    <select id="categoryFilter" aria-label="Filter by service">
+
+                        <option value="">All services</option>
+
+                        <option value="Veterinary Clinic">
+                            Veterinary Clinics
+                        </option>
+
+                        <option value="Animal Hospital">
+                            Animal Hospitals
+                        </option>
+
+                        <option value="Pet Boarding">
+                            Pet Boarding
+                        </option>
+
+                        <option value="Diagnostics">
+                            Diagnostics
+                        </option>
+
+                        <option value="Animal Ambulance">
+                            Animal Ambulance
+                        </option>
+
+                        <option value="NGO">
+                            Animal NGOs
+                        </option>
+
+                    </select>
+
+
+                    <select id="ratingFilter" aria-label="Filter by rating">
+
+                        <option value="">All ratings</option>
+
+                        <option value="4">
+                            4+ stars
+                        </option>
+
+                        <option value="4.5">
+                            4.5+ stars
+                        </option>
+
+                    </select>
+
+
+                    <label class="open-filter">
+
+                        <input type="checkbox" id="openFilter">
+
+                        Open now
+
+                    </label>
+
+                </div>
+
+
+                <!-- PROVIDER CARDS -->
+                <div class="provider-grid" id="providerGrid">
+
+                    <!-- Provider cards will be generated using JavaScript -->
+
+                </div>
+
+
+                <!-- NO RESULTS MESSAGE -->
+                <p class="no-results" id="noResults" hidden>
+                    No providers found. Try changing your filters.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- BUSINESS LISTING SECTION -->
+        <section class="business-section section" id="list-business">
+
+            <div class="container business-container">
+
+                <div class="business-content">
+
+                    <span class="section-tag">
+                        FOR ANIMAL-CARE PROVIDERS
+                    </span>
+
+                    <h2>
+                        Are you providing animal-care services?
+                    </h2>
+
+                    <p>
+                        Help pet owners and animal lovers discover your clinic,
+                        hospital, boarding facility or organisation.
+                    </p>
+
+
+                    <button
+                        type="button"
+                        class="primary-btn"
+                        id="listBusinessBtn"
+                    >
+                        List Your Business →
+                    </button>
+
+                </div>
+
+
+                <div class="business-visual">
+
+                    <span>🏥</span>
+                    <span>🐕</span>
+                    <span>❤️</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CORRECTION SECTION -->
+        <section class="correction-section" id="about">
+
+            <div class="container correction-container">
+
+                <div>
+
+                    <h2>
+                        Help us keep information accurate
+                    </h2>
+
+                    <p>
+                        Found incorrect or outdated provider information?
+                        Help us improve the platform.
+                    </p>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="secondary-btn"
+                    id="correctionBtn"
+                >
+                    Submit a Correction →
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div>
+
+                <a href="#" class="logo footer-logo">
+                    🐾 Practo for Animals
+                </a>
+
+                <p>
+                    Making animal-care discovery easier for everyone.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#services">Services</a>
+
+                <a href="#providers">Providers</a>
+
+                <a href="#list-business">List Your Business</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="container footer-bottom">
+
+            <p>
+                © 2026 Practo for Animals. Prototype concept.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- INTERACTIVE MODAL -->
+    <div
+        class="modal-overlay"
+        id="modalOverlay"
+        aria-hidden="true"
+    >
+
+        <div
+            class="modal-box"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalTitle"
+        >
+
+            <button
+                type="button"
+                class="modal-close"
+                id="modalClose"
+                aria-label="Close dialog"
+            >
+                &times;
+            </button>
+
+
+            <div id="modalContent">
+
+                <!-- Forms and provider details will appear here -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>
